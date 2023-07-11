@@ -11,8 +11,8 @@ public class ObspringdatajpaApplication {
 		ApplicationContext context = SpringApplication.run(ObspringdatajpaApplication.class, args);
 		CocheRepository repositorio = context.getBean(CocheRepository.class);
 
-		System.out.println("find");
-		System.out.println(repositorio.count());
+		System.out.println("Inicio");
+		System.out.println("Contador " + repositorio.count());
 
 		// crear y almacenar un coche en una base de datos
 		Coche toyota = new Coche(null, "Toyota", "Prius", 2010);
@@ -21,6 +21,7 @@ public class ObspringdatajpaApplication {
 		// recuperar un coche por id
 		repositorio.findAll();
 		System.out.println(repositorio.findAll());
+		System.out.printf("Fin del programa");
 	}
 
 }

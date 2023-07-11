@@ -19,9 +19,9 @@ public class Coche {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String manufacturer;
-    private String model;
-    private Integer year;
+    private String manufactura;
+    private String modelo;
+    private Integer anio;
 
     // constructores
     public Coche() {
@@ -29,9 +29,9 @@ public class Coche {
 
     public Coche(Long id, String manufacturer, String model, Integer year) {
         this.id = id;
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.year = year;
+        this.manufactura = manufacturer;
+        this.modelo = model;
+        this.anio = year;
     }
 
     // getters and setters
@@ -44,27 +44,27 @@ public class Coche {
     }
 
     public String getManufacturer() {
-        return manufacturer;
+        return manufactura;
     }
 
     public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+        this.manufactura = manufacturer;
     }
 
     public String getModel() {
-        return model;
+        return modelo;
     }
 
     public void setModel(String model) {
-        this.model = model;
+        this.modelo = model;
     }
 
     public Integer getYear() {
-        return year;
+        return anio;
     }
 
     public void setYear(Integer year) {
-        this.year = year;
+        this.anio = year;
     }
 
 
@@ -73,9 +73,9 @@ public class Coche {
     public String toString() {
         return "Coche{" +
                 "id=" + id +
-                ", manufacturer='" + manufacturer + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
+                ", manufacturer='" + manufactura + '\'' +
+                ", model='" + modelo + '\'' +
+                ", year=" + anio +
                 '}';
     }
 }
